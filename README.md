@@ -17,7 +17,7 @@ var Simpson = function( name ){
   // create an event
   this.createEvent('updateName');
 }
-
+// * * * Here we add EventMixin to the prototype of the class Simpson
 Simpson.prototype = $.extend( {} , EventMixin, {
   setName : function( name ){
     this.name = name;
@@ -44,6 +44,6 @@ Name                                          | Description
 ----------------------------------------------|-------------
 `createEvent( event:STRING )`                 | Create a new event on the classe.
 `on( event:STRING , handler:FUNCTION )`       | Attach a new event listener on an object
-`off( event:STRING [, handler:FUNCTION ] )`   | Detach a specific listener or all the listener of an event
+`off( event:STRING [, handler:FUNCTION ] )`   | Detach a specific listener or all the listeners of an event
 `trigger( event:STRING )`                     | Trigger an event
 
