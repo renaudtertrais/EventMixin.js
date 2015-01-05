@@ -18,7 +18,7 @@ var Simpson = function( name ){
   this.createEvent('updateName');
 }
 
-MyClass.prototype = $.extend( {} , EventMixin, {
+Simpson.prototype = $.extend( {} , EventMixin, {
   setName : function( name ){
     this.name = name;
     // trigger the event
